@@ -10,6 +10,7 @@
         <th>Name</th>
         <th>Role</th>
         <th>Moblie</th>
+        <th>Birthdate</th>
         <th>age</th>
         <th></th>
         </tr>
@@ -22,7 +23,11 @@
             <td> @employee.Name </td>
             <td> @employee.Role</td>
             <td>@employee.Mobile</td>
-
+           <td>
+            @if(employee.Birthdate!=null){
+             @employee.Birthdate.Value.ToShortDateString()
+            }
+            </td>
              <td>@employee.Age</td>
              <td>
                  <button class="btn btn-danger" @onclick="()=>Delete(employee.id)">Delete</button>

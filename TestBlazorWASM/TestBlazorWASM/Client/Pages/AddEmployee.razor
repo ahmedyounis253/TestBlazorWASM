@@ -22,7 +22,8 @@ else
    
     <label for="name">Role:</label>
     <InputText @bind-Value="_employee.Role" class="form-control " ></InputText>  
-    
+    <label for="BirthDate">BirthDate:</label>
+    <InputDate  @bind-Value="_employee.Birthdate" @bind-Value:format="dd/MM/yyyy" class="form-control " ></InputDate>
     <label for="name">Age:</label>
     <InputNumber  @bind-Value="_employee.Age" class="form-control " ></InputNumber>
     @if (id==0)

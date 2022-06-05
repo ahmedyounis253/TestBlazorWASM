@@ -52,8 +52,7 @@
             var currentEmployee = context.Employees.First(emp => emp.id == id);
             try
             {
-                currentEmployee.Age = employee.Age;
-                currentEmployee.Mobile = employee.Mobile;
+                context.Employees.Update(employee);
                 context.SaveChanges();
             }
             catch (Exception ex)

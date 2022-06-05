@@ -4,7 +4,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options=>
                                                     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
                                                     .EnableSensitiveDataLogging()
                                                     .EnableDetailedErrors()
-                                                    //.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
+                                                    .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
                                                      );
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
