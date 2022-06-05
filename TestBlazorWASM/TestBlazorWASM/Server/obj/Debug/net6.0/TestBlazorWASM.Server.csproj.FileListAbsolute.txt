@@ -162,3 +162,5 @@ C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\T
 C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Server\obj\Debug\net6.0\TestBlazorWASM.Server.pdb
 C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Server\obj\Debug\net6.0\TestBlazorWASM.Server.genruntimeconfig.cache
 C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Server\obj\Debug\net6.0\ref\TestBlazorWASM.Server.dll
+C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Server\bin\Debug\net6.0\Blazored.FluentValidation.dll
+C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Server\bin\Debug\net6.0\FluentValidation.dll
