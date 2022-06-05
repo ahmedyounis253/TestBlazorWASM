@@ -196,15 +196,15 @@
       "mscorlib.dll": "sha256-ghlJNtzzYlKIliGPuf0A0Yu6dmLycSx3F9uyeddFb\/g=",
       "netstandard.dll": "sha256-qpOz\/RBwhlIYfaE2GDEmjiproxkvSf2b9GeqHxvH+lg=",
       "System.Private.CoreLib.dll": "sha256-sfzSZ3YKC2rpF77TVOKLuPgQag93QXr9U4AUc9d\/LKA=",
-      "TestBlazorWASM.Shared.dll": "sha256-NuNU6kcuQhV7E5PKvzyHBGTS+fal9iSjii4QcoKwrHI=",
-      "TestBlazorWASM.Client.dll": "sha256-xdGXPO\/kSY+8lvt5fgBjGOEVBPHoj8nQtC6RV+F5CQA="
+      "TestBlazorWASM.Shared.dll": "sha256-Tbn3M3lb3LK5rs6gDLO6Ksw1JyOITAT85\/q1VMulGPs=",
+      "TestBlazorWASM.Client.dll": "sha256-kylzVrBXG2ZGrZAOrg8K1X\/ORHQQsrv66MkXy8mE8f0="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "TestBlazorWASM.Shared.pdb": "sha256-KswnN1y3xnlRr24V656PUyTUCUo5Qjw2vLj6OGKh+nM=",
-      "TestBlazorWASM.Client.pdb": "sha256-Y7lbcNqIFNvCeqh4b0R2cFZ2LWuiXt6WJpJKjKuuF+I="
+      "TestBlazorWASM.Shared.pdb": "sha256-bGON7VhlgcLEaWLryq7hULFUajhiHVtAQFgMTbQBnlI=",
+      "TestBlazorWASM.Client.pdb": "sha256-Shwqht4f27PASbPtPTnhxnRxhBHlDQSRLvSldmqEfUg="
     },
     "runtime": {
       "dotnet.6.0.5.u5ac9hg7md.js": "sha256-783uOt0jgblQfP6Yz5TJeuW2xxtl6UHZQPngZtCz79U=",

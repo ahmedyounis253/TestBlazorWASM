@@ -30,12 +30,16 @@ namespace TestBlazorWASM.Server.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
 
-                    b.Property<int?>("Age")
+                    b.Property<int>("Age")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("Birthdate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("EmployeeID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("nvarchar(max)")
+                        .HasComputedColumnSql("Upper(Concat(SubString([Role],1,1) + SubString([Name],1,1)+ SubString([Name],Len([Name]),Len([Name])),[Age]*[id]/3))");
 
                     b.Property<string>("Mobile")
                         .HasColumnType("nvarchar(max)");

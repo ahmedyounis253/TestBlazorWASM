@@ -1,4 +1,5 @@
 ﻿
+
 namespace TestBlazorWASM.Server
 {
     public class ApplicationDbContext:DbContext
@@ -12,8 +13,13 @@ namespace TestBlazorWASM.Server
         {
             modelBuilder.Entity<Employee>().HasKey(e => e.id);
             modelBuilder.Entity<Employee > ().ToTable("Employee");
-                                                                               
-        }
+            modelBuilder.Entity<Employee>().Property(e => e.EmployeeID).HasComputedColumnSql(
+                "Upper(Concat(" +
+                "SubString([Role],1,1) + " +
+                "SubString([Name],1,1)+ " +
+                "SubString([Name],Len([Name]),Len([Name]))" +
+                ",[Age]*[id]/3))");
+                         }
     
     
     public DbSet<Employee> Employees { get; set; }
