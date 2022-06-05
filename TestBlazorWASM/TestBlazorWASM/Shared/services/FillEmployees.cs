@@ -1,7 +1,5 @@
-﻿namespace TestBlazorWASM.Shared.services
+﻿namespace TestBlazorWASM.Shared
 {
-
-
     public class FillEmployees
     {
         public static List<Employee> employees { get; set; } = new();
@@ -88,9 +86,6 @@
                     Mobile="+2"+GetPhone(),
                     Role="Trainee"
                 }
-
-
-
             };
         }
 

@@ -1,19 +1,9 @@
-﻿
-
-
-namespace TestBlazorWASM.Shared.Entities
+﻿namespace TestBlazorWASM.Shared
 {
-    public record Employee
+    public class Employee:BaseNameEntity
     {
-        public int id { get; set; }
+        public string? Role { get; set; }
 
-        [Required(ErrorMessage = "Name field is required")]
-        public string Name { get; set; } = "None";
-
-        [Required(ErrorMessage = "Role field is required")]
-        public string Role { get; set; } = "Trainee";
-
-        [Range(maximum: 100, minimum: 20)]
         public int Age { get; set; }
 
         public DateTime? Birthdate { get; set; }
