@@ -1644,3 +1644,11 @@ C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\T
 C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Client\obj\Debug\net6.0\refint\TestBlazorWASM.Client.dll
 C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Client\obj\Debug\net6.0\TestBlazorWASM.Client.pdb
 C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Client\obj\Debug\net6.0\ref\TestBlazorWASM.Client.dll
+C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.FluentValidation.dll
+C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Client\bin\Debug\net6.0\wwwroot\_framework\FluentValidation.dll
+C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Client\bin\Debug\net6.0\wwwroot\_framework\FluentValidation.dll.gz
+C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.FluentValidation.dll.gz
+C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Client\bin\Debug\net6.0\Blazored.FluentValidation.dll
+C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Client\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Client\obj\Debug\net6.0\build-gz\KyBmEfaS.gz
+C:\Users\younis\Desktop\InnoTech\InnoTech Projects\FirstProject\TestBlazorWASM\TestBlazorWASM\Client\obj\Debug\net6.0\build-gz\4aFdZRsM.gz

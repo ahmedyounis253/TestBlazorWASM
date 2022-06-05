@@ -1,10 +1,10 @@
-﻿@page "/employees"
+﻿@page "/students"
 
 
-<h3>Employees</h3>
+<h3>Students</h3>
 <div class=" row p-0">
     <div class="col col-5">
-<button @onclick="AddEmployee" class="btn btn-primary align-self-end">add Employee</button>
+<button @onclick="AddStudent" class="btn btn-primary align-self-end">add Student</button>
 
     </div>
     <div class="col col-4">
@@ -21,9 +21,7 @@
 <table class="table table-borderless table-responsive-xl table-striped">
     <thead>
         <tr>
-        <th class='col-2'>Employee ID </th>
         <th>Name</th>
-        <th>Role</th>
         <th>Moblie</th>
         <th>Birthdate</th>
         <th>age</th>
@@ -31,32 +29,31 @@
         </tr>
     </thead>
     <tbody>
-        
-        @if (employees == null)
+
+
+        @if (students == null)
         {
             <P>loading</P>
         }
-        else if (employees.Count == 0)
+        else if (students.Count == 0)
         {
             <p> No Students Found</p>
         }
         else{
-        @foreach( Employee employee in employees)
+        @foreach( Student student in students)
         {
             <tr>
-            <td> @employee.EmployeeID </td>
-            <td> @employee.Name </td>
-            <td> @employee.Role</td>
-            <td>@employee.Mobile</td>
+            <td> @student.Name </td>
+            <td>@student.Mobile</td>
            <td>
-            @if(employee.Birthdate!=null){
-             @employee.Birthdate.Value.ToShortDateString()
+            @if(student.Birthdate!=null){
+             @student.Birthdate.Value.ToShortDateString()
             }
             </td>
-             <td>@employee.Age</td>
+             <td>@student.Age</td>
              <td>
-                 <button class="btn btn-danger" @onclick="()=>Delete(employee.Id)">Delete</button>
-                 <button class="btn btn-secondary" @onclick="()=>Update(employee.Id)">Update</button>
+                 <button class="btn btn-danger" @onclick="()=>Delete(student.Id)">Delete</button>
+                 <button class="btn btn-secondary" @onclick="()=>Update(student.Id)">Update</button>
              
              </td>
                
@@ -65,6 +62,7 @@
         </tr>
         }
         }
+
     </tbody>
 </table>
 

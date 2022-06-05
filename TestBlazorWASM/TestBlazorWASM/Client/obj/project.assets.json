@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Blazored.FluentValidation/2.1.0-preview.1": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.0.0",
+          "Microsoft.AspNetCore.Components.Web": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Blazored.FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Blazored.FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation/11.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/6.0.5": {
         "type": "package",
         "dependencies": {
@@ -394,6 +416,9 @@
       "TestBlazorWASM.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blazored.FluentValidation": "2.1.0-preview.1"
+        },
         "compile": {
           "bin/placeholder/TestBlazorWASM.Shared.dll": {}
         },
@@ -403,6 +428,28 @@
       }
     },
     "net6.0/browser-wasm": {
+      "Blazored.FluentValidation/2.1.0-preview.1": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.0.0",
+          "Microsoft.AspNetCore.Components.Web": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Blazored.FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Blazored.FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation/11.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/6.0.5": {
         "type": "package",
         "dependencies": {
@@ -789,6 +836,9 @@
       "TestBlazorWASM.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blazored.FluentValidation": "2.1.0-preview.1"
+        },
         "compile": {
           "bin/placeholder/TestBlazorWASM.Shared.dll": {}
         },
@@ -799,6 +849,40 @@
     }
   },
   "libraries": {
+    "Blazored.FluentValidation/2.1.0-preview.1": {
+      "sha512": "F5+Rn/Y+RCHiZAMx7jg8fKQ6An8qW5WTFf9zOfp+vMmNQGgJZDRzMtxWlZDYistg/uSEf+fxVkrskpWw6enD6Q==",
+      "type": "package",
+      "path": "blazored.fluentvalidation/2.1.0-preview.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazored.fluentvalidation.2.1.0-preview.1.nupkg.sha512",
+        "blazored.fluentvalidation.nuspec",
+        "icon.png",
+        "lib/net6.0/Blazored.FluentValidation.dll"
+      ]
+    },
+    "FluentValidation/11.0.0": {
+      "sha512": "cD0VaOQfVZGxp3UFBDET5KztMe1W0QUgk7vP/e1zus0ofALqab5/B5S319+XEFvhw0KEStS3yfCDGpvQM10C6A==",
+      "type": "package",
+      "path": "fluentvalidation/11.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.0.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/6.0.5": {
       "sha512": "T3J4Z4xK/mmJlMv/j7Cs1PZjRLh1fGsvHay3RNBNooP0qhHCk3UnU+WgBvcGApZFnEfeyOEGZBHZv5gb1RrDLA==",
       "type": "package",

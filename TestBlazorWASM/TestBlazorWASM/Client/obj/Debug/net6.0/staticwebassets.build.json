@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u8FAYm2QuRfy9l6XBA6aQ0ZMy6K1QmBo6Vtx+Lj4dWk=",
+  "Hash": "h1OAVOkoIofI88UmNeOlsJlBNXtmpa2IL1HHtQFt8A0=",
   "Source": "TestBlazorWASM.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\younis\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.5\\build\\net6.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.FluentValidation.dll",
+      "SourceId": "TestBlazorWASM.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.FluentValidation.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\younis\\.nuget\\packages\\blazored.fluentvalidation\\2.1.0-preview.1\\lib\\net6.0\\Blazored.FluentValidation.dll"
     },
     {
       "Identity": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.6.0.5.u5ac9hg7md.js",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\younis\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.5\\runtimes\\browser-wasm\\native\\dotnet.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\FluentValidation.dll",
+      "SourceId": "TestBlazorWASM.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/FluentValidation.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\younis\\.nuget\\packages\\fluentvalidation\\11.0.0\\lib\\net6.0\\FluentValidation.dll"
     },
     {
       "Identity": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
@@ -3825,6 +3859,23 @@
       "OriginalItemSpec": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.Calendars.dll"
     },
     {
+      "Identity": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\obj\\Debug\\net6.0\\build-gz\\4aFdZRsM.gz",
+      "SourceId": "TestBlazorWASM.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/FluentValidation.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\FluentValidation.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\FluentValidation.dll"
+    },
+    {
       "Identity": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\obj\\Debug\\net6.0\\build-gz\\4OAe+IOv.gz",
       "SourceId": "TestBlazorWASM.Client",
       "SourceType": "Computed",
@@ -5217,6 +5268,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XPath.XDocument.dll"
+    },
+    {
+      "Identity": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\obj\\Debug\\net6.0\\build-gz\\KyBmEfaS.gz",
+      "SourceId": "TestBlazorWASM.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.FluentValidation.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.FluentValidation.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.FluentValidation.dll"
     },
     {
       "Identity": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\obj\\Debug\\net6.0\\build-gz\\Kyrjqf4L.gz",

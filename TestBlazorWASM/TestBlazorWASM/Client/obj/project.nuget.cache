@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "b1gZSo3VG06jZkfQibvPprFNGC20466RATW8T3A+5QZu7YayZ3vhYUzNgkkZIAFMKuOVw658HXDixSMpKXs8SQ==",
+  "dgSpecHash": "Gs+88fjt0yh6rdwgZUUcSvl55KZKWL5049bfyClT8HIk6ezzGDQxhD7m/Do2ITyw6ii/vuV1s2QDZ/RFYF7q3w==",
   "success": true,
   "projectFilePath": "C:\\Users\\younis\\Desktop\\InnoTech\\InnoTech Projects\\FirstProject\\TestBlazorWASM\\TestBlazorWASM\\Client\\TestBlazorWASM.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\younis\\.nuget\\packages\\blazored.fluentvalidation\\2.1.0-preview.1\\blazored.fluentvalidation.2.1.0-preview.1.nupkg.sha512",
+    "C:\\Users\\younis\\.nuget\\packages\\fluentvalidation\\11.0.0\\fluentvalidation.11.0.0.nupkg.sha512",
     "C:\\Users\\younis\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.5\\microsoft.aspnetcore.authorization.6.0.5.nupkg.sha512",
     "C:\\Users\\younis\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.5\\microsoft.aspnetcore.components.6.0.5.nupkg.sha512",
     "C:\\Users\\younis\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.5\\microsoft.aspnetcore.components.analyzers.6.0.5.nupkg.sha512",
