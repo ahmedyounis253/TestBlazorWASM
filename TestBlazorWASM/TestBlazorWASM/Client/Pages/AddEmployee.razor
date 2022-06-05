@@ -1,0 +1,43 @@
+﻿@page "/AddEmployee"
+@page "/EditEmployee/{id:int}"
+@if (id==0)
+{
+    <h3>Add Employee</h3>
+}
+else
+{
+        <h3>Edit Employee</h3>
+}
+<div class='card p-5'>
+    
+<EditForm Model="_employee" OnValidSubmit="@Submit" class="form ">
+        <DataAnnotationsValidator />
+
+    <ValidationSummary/>
+    <label for="name" >Name:</label>
+    <InputText @bind-Value="_employee.Name" class="form-control "></InputText> 
+   
+    <label for="Moblie">Moblie:</label>
+    <InputText @bind-Value="_employee.Mobile" class="form-control " ></InputText> 
+   
+    <label for="name">Role:</label>
+    <InputText @bind-Value="_employee.Role" class="form-control " ></InputText>  
+    
+    <label for="name">Age:</label>
+    <InputNumber  @bind-Value="_employee.Age" class="form-control " ></InputNumber>
+    @if (id==0)
+        {
+            <button type="submit" class="btn btn-primary mt-5 me-2 ">
+                Add 
+            </button>
+        }
+        else
+        {
+             <button type="submit" class="btn btn-primary mt-5 me-2 ">
+                Save 
+            </button>  
+        }
+        <a href="employees" class="btn btn-danger mt-5 me-4">Cancel </a>
+    </EditForm>
+
+</div>

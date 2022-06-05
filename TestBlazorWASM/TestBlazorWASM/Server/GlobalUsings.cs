@@ -1,0 +1,11 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+global using TestBlazorWASM.Shared.services;
+global using TestBlazorWASM.Shared.Entities;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Mvc;
+global using Newtonsoft.Json;
+global using TestBlazorWASM.Server;

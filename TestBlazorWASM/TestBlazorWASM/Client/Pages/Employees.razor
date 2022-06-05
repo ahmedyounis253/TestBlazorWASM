@@ -1,0 +1,41 @@
+﻿@page "/employees"
+
+
+<h3>Employees</h3>
+<button @onclick="AddEmployee" class="btn btn-primary align-self-end">add Employee</button>
+<table class="table table-borderless table-responsive-xl table-striped">
+    <thead>
+        <tr>
+        <th class='col-2'>Employee ID </th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Moblie</th>
+        <th>age</th>
+        <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach( Employee employee in employees??new())
+        {
+            <tr>
+            <td> @employee.EmployeeID </td>
+            <td> @employee.Name </td>
+            <td> @employee.Role</td>
+            <td>@employee.Mobile</td>
+
+             <td>@employee.Age</td>
+             <td>
+                 <button class="btn btn-danger" @onclick="()=>Delete(employee.id)">Delete</button>
+                 <button class="btn btn-secondary" @onclick="()=>Update(employee.id)">Update</button>
+             
+             </td>
+               
+            
+
+        </tr>
+        }
+
+    </tbody>
+</table>
+
+
