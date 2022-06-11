@@ -48,7 +48,7 @@ namespace TestBlazorWASM.Server.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Employee");
+                    b.ToTable("Employee", (string)null);
                 });
 
             modelBuilder.Entity("TestBlazorWASM.Shared.Student", b =>
@@ -71,7 +71,7 @@ namespace TestBlazorWASM.Server.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Student");
+                    b.ToTable("Student", (string)null);
                 });
 #pragma warning restore 612, 618
         }

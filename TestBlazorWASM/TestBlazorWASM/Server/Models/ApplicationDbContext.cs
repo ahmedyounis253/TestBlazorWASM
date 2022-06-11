@@ -8,8 +8,8 @@ namespace TestBlazorWASM.Server
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration<Employee>(new EmployeeConfiguration());
-            modelBuilder.ApplyConfiguration<Student>(new StudentConfiguration());
+            modelBuilder.ApplyConfiguration<Employee>(new EmployeeConfiguration())
+                        .ApplyConfiguration<Student>(new StudentConfiguration());
         }
     }
 }
