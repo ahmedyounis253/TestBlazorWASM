@@ -14,7 +14,7 @@ namespace TestBlazorWASM.Server
             builder.Property(e => e.EmployeeID).HasComputedColumnSql(
                 "Upper(Concat(" +
                 "SubString([Role],1,1) + " +
-                $",[Age]*{(new Random()).Next(1000)}/3))");
+                ",[Age]*Round(RAND()*1000,0)/3))");
 
         }
     }
