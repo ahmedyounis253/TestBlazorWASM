@@ -2,13 +2,13 @@
 
 namespace TestBlazorWASM.Server
 {
-    public class StudentConfiguration: BaseNameEntityConfiguration<Student>, IEntityTypeConfiguration<Student>
+    public class TeacherConfiguration: BaseNameEntityConfiguration<Teacher>, IEntityTypeConfiguration<Teacher>
     {
-    public override void Configure(EntityTypeBuilder<Student> builder)
+    public override void Configure(EntityTypeBuilder<Teacher> builder)
         {
             base.Configure(builder);
 
-            builder.ToTable("Students");
+            builder.ToTable("Teachers");
             builder.Property(s => s.Age).IsRequired();
             builder.Property(s=> s.Mobile).HasMaxLength(20);    
 

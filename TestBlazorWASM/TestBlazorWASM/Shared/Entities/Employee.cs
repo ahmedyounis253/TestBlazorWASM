@@ -1,6 +1,6 @@
 ﻿namespace TestBlazorWASM.Shared
 {
-    public class Employee:BaseNameEntity
+    public class Employee:BaseNameEntity 
     {
         public string? Role { get; set; }
 

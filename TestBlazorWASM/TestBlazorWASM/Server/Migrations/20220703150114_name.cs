@@ -4,7 +4,7 @@
 
 namespace TestBlazorWASM.Server.Migrations
 {
-    public partial class fixing1 : Migration
+    public partial class name : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,11 +13,11 @@ namespace TestBlazorWASM.Server.Migrations
                 table: "Employees",
                 type: "nvarchar(max)",
                 nullable: true,
-                computedColumnSql: "Upper(Concat(SubString([Role],1,1) + SubString([Name],1,1)+SubString([Name],3,3),Round([Age]*Round(RAND()*100,0)/(RAND()*10),0)))",
+                computedColumnSql: "Upper(Concat(SubString([Role],1,1) + SubString([Name],1,1) + SubString([Name],3,1),Round([Age]*Round(RAND()*100,0)/(RAND()*10),0)))",
                 oldClrType: typeof(string),
                 oldType: "nvarchar(max)",
                 oldNullable: true,
-                oldComputedColumnSql: "Upper(Concat(SubString([Role],1,1) + SubString([Name],1,1),Round([Age]*Round(RAND()*1000,0)/(RAND()*10),0)))");
+                oldComputedColumnSql: "Upper(Concat(SubString([Role],1,1),Round([Age]*Round(RAND()*100,0)/(RAND()*10),0)))");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -27,11 +27,11 @@ namespace TestBlazorWASM.Server.Migrations
                 table: "Employees",
                 type: "nvarchar(max)",
                 nullable: true,
-                computedColumnSql: "Upper(Concat(SubString([Role],1,1) + SubString([Name],1,1),Round([Age]*Round(RAND()*1000,0)/(RAND()*10),0)))",
+                computedColumnSql: "Upper(Concat(SubString([Role],1,1),Round([Age]*Round(RAND()*100,0)/(RAND()*10),0)))",
                 oldClrType: typeof(string),
                 oldType: "nvarchar(max)",
                 oldNullable: true,
-                oldComputedColumnSql: "Upper(Concat(SubString([Role],1,1) + SubString([Name],1,1)+SubString([Name],3,3),Round([Age]*Round(RAND()*100,0)/(RAND()*10),0)))");
+                oldComputedColumnSql: "Upper(Concat(SubString([Role],1,1) + SubString([Name],1,1) + SubString([Name],3,1),Round([Age]*Round(RAND()*100,0)/(RAND()*10),0)))");
         }
     }
 }

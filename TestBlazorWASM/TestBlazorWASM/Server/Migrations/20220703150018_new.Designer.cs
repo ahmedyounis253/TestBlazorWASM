@@ -12,8 +12,8 @@ using TestBlazorWASM.Server;
 namespace TestBlazorWASM.Server.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220703140554_fixing1")]
-    partial class fixing1
+    [Migration("20220703150018_new")]
+    partial class @new
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -39,7 +39,7 @@ namespace TestBlazorWASM.Server.Migrations
                     b.Property<string>("EmployeeID")
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("nvarchar(max)")
-                        .HasComputedColumnSql("Upper(Concat(SubString([Role],1,1) + SubString([Name],1,1)+SubString([Name],3,3),Round([Age]*Round(RAND()*100,0)/(RAND()*10),0)))");
+                        .HasComputedColumnSql("Upper(Concat(SubString([Role],1,1),Round([Age]*Round(RAND()*100,0)/(RAND()*10),0)))");
 
                     b.Property<string>("Mobile")
                         .HasMaxLength(20)
@@ -54,6 +54,9 @@ namespace TestBlazorWASM.Server.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
 
                     b.ToTable("Employees", (string)null);
                 });
@@ -81,6 +84,9 @@ namespace TestBlazorWASM.Server.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
 
                     b.ToTable("Students", (string)null);
                 });

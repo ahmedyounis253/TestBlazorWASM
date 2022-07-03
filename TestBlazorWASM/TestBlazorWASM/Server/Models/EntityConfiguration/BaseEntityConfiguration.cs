@@ -1,7 +1,7 @@
 ﻿
 namespace TestBlazorWASM.Server
 {
-    public class BaseEntityonfiguration<TEntity> : IEntityTypeConfiguration<TEntity>
+    public class BaseEntityConfiguration<TEntity> : IEntityTypeConfiguration<TEntity>
         where TEntity : BaseEntity
     {
 
