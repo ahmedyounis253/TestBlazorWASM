@@ -3,7 +3,7 @@ namespace TestBlazorWASM.Server
 {
     public class EmployeeConfiguration: BaseEntityonfiguration<Employee>
     {
-    public void Configure(EntityTypeBuilder<Employee> builder)
+    public override void Configure(EntityTypeBuilder<Employee> builder)
         {
             base.Configure(builder);
             builder.ToTable("Employees");
@@ -13,8 +13,8 @@ namespace TestBlazorWASM.Server
             builder.Property(e => e.Mobile).HasMaxLength(20); 
             builder.Property(e => e.EmployeeID).HasComputedColumnSql(
                 "Upper(Concat(" +
-                "SubString([Role],1,1) + " +
-                ",[Age]*Round(RAND()*1000,0)/3))");
+                "SubString([Role],1,1) + SubString([Name],1,1)+SubString([Name],3,1)" +
+                ",Round([Age]*Round(RAND()*100,0)/(RAND()*10),0)))");
 
         }
     }

@@ -4,7 +4,7 @@ namespace TestBlazorWASM.Server
 {
     public class StudentConfiguration: BaseEntityonfiguration<Student>
     {
-    public void Configure(EntityTypeBuilder<Student> builder)
+    public override void Configure(EntityTypeBuilder<Student> builder)
         {
             base.Configure(builder);
 

@@ -1,23 +1,27 @@
 using TestBlazorWASM.Server;
 
-var builder = WebApplication.CreateBuilder(args);
-string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options=>
+
+WebApplicationBuilder webApplicationbuilder = WebApplication.CreateBuilder(args);
+
+
+
+string connectionString = webApplicationbuilder.Configuration.GetConnectionString("DefaultConnection");
+webApplicationbuilder.Services.AddDbContext<ApplicationDbContext>(options=>
                                                     options.UseSqlServer(connectionString)
                                                            .EnableSensitiveDataLogging()
                                                            .EnableDetailedErrors()
                                                            .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
                                                            );
-builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
+webApplicationbuilder.Services.AddControllersWithViews();
+webApplicationbuilder.Services.AddRazorPages();
 
-builder.Services.AddScoped<IStudentRepository, StudentRepository>();
-builder.Services.AddScoped<IStudentUnitOfWork, StudentUnitOfWork>();
+webApplicationbuilder.Services.AddScoped<IStudentRepository, StudentRepository>();
+webApplicationbuilder.Services.AddScoped<IStudentUnitOfWork, StudentUnitOfWork>();
 
-builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
-builder.Services.AddScoped<IEmployeeUnitOfWork, EmployeeUnitOfWork>();
+webApplicationbuilder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+webApplicationbuilder.Services.AddScoped<IEmployeeUnitOfWork, EmployeeUnitOfWork>();
 
-var app = builder.Build();
+var app = webApplicationbuilder.Build();
 
 if (app.Environment.IsDevelopment())
     app.UseWebAssemblyDebugging();
