@@ -27,7 +27,7 @@
 
         public async Task<List<Employee>?> GetEmployees()
         {
-            return await client.GetFromJsonAsync<List<Employee>>("api/employees");
+            return (await client.GetFromJsonAsync<List<Employee>>("api/employees")).OrderBy(e=>e.Name).ToList();
         }
         
         public async Task LoadDefaultEmployeesAsync()
