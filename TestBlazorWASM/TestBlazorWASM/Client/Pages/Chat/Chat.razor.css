@@ -1,0 +1,33 @@
+﻿.chat-box {
+    height: 500px;
+    width: 100%;
+    min-height: 90%;
+
+}
+.message-box{
+
+    width:90%;
+    margin-right:0px;
+    padding-right:0px;
+}
+.send-div{
+    margin-left:0px;
+    padding-left:0px;
+    max-width:100px;
+}
+
+.messageFrom {
+    margin-left:10px;
+    padding-left: 10px;
+    width:fit-content;
+    max-width:400px;
+    height: auto;
+    background-color: darkslateblue;
+}
+.messageTo {
+    height: auto;
+    background-color: cyan;
+    padding-left: 10px;
+
+    text-align:right;
+}
