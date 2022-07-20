@@ -1,4 +1,3 @@
-using TestBlazorWASM.Server;
 
 
 WebApplicationBuilder webApplicationbuilder = WebApplication.CreateBuilder(args);
@@ -20,7 +19,11 @@ webApplicationbuilder.Services.AddScoped<IStudentUnitOfWork, StudentUnitOfWork>(
 
 webApplicationbuilder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 webApplicationbuilder.Services.AddScoped<IEmployeeUnitOfWork, EmployeeUnitOfWork>();
-
+webApplicationbuilder.Services.AddSignalR();
+webApplicationbuilder.Services.AddResponseCompression(options =>
+{
+    options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[] { "application/octet-stream" });
+});
 var app = webApplicationbuilder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -30,7 +33,7 @@ else
     app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
-
+app.UseResponseCompression();
 app.UseHttpsRedirection();
 app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
@@ -38,5 +41,5 @@ app.UseRouting();
 app.MapRazorPages();
 app.MapControllers();
 app.MapFallbackToFile("index.html");
-
+app.MapHub<ChatHub>("/Chat");
 app.Run();

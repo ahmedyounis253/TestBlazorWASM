@@ -9,3 +9,6 @@ global using Microsoft.EntityFrameworkCore.Storage;
 global using Microsoft.EntityFrameworkCore.Metadata.Builders;
 global using System.Reflection;
 global using Microsoft.EntityFrameworkCore.ValueGeneration;
+global using Microsoft.AspNetCore.SignalR;
+global using Microsoft.AspNetCore.ResponseCompression;
+global using TestBlazorWASM.Server;
