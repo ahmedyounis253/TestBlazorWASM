@@ -30,8 +30,8 @@
         <th></th>
         </tr>
     </thead>
-    <tbody>
         
+    <tbody>
         @if (employees == null)
         {
             <P>loading</P>
@@ -41,7 +41,7 @@
             <p> No Students Found</p>
         }
         else{
-        @foreach( Employee employee in employees)
+        foreach( Employee employee in employees)
         {
             <tr>
             <td> @employee.EmployeeID </td>

@@ -10,9 +10,8 @@ else
 }
 <div class='card p-5'>
     
-<EditForm Model="_employee" OnValidSubmit="@Submit" class="form ">
-        <DataAnnotationsValidator />
-
+<EditForm Model="_employee" OnValidSubmit="Submit" class="form ">
+    <FluentValidationValidator/>
     <ValidationSummary/>
     <label for="name" >Name:</label>
     <InputText @bind-Value="_employee.Name" class="form-control "></InputText> 

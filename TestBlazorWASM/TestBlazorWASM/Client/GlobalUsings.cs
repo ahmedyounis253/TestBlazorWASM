@@ -9,3 +9,4 @@ global using Microsoft.AspNetCore.Components.Web;
 global using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 global using TestBlazorWASM.Client;
 global using TestBlazorWASM.Shared;
+global using Microsoft.AspNetCore.SignalR.Client;
