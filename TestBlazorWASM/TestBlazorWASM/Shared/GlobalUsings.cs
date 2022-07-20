@@ -6,3 +6,5 @@ global using System.Threading.Tasks;
 global using TestBlazorWASM.Shared;
 global using System.ComponentModel.DataAnnotations;
 global using FluentValidation;
+global using Microsoft.EntityFrameworkCore.ChangeTracking;
+global using Microsoft.EntityFrameworkCore.ValueGeneration;
